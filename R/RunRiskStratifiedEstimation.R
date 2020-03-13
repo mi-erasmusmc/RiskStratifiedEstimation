@@ -289,6 +289,8 @@ runRiskStratifiedEstimation <- function(connectionDetails,
                                        timeStamp,
                                      analysisId = analysisSettings$
                                        analysisId)
+
+    ParallelLogger::registerLogger(logger)
   }
 
   ParallelLogger::logInfo("Estimated prediction models for all outcomes")
