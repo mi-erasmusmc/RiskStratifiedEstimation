@@ -35,6 +35,7 @@ This vignette describes tha application of a risk modeling predictive approach t
 - **Identification of the database:** We need to define the database(s) on which we will assess treatment effect heterogeneity. We need to make sure that the cohorts created contain enouhg patients to proceed with the application of the method.
 - **Prediction step:** Combnine the treatment and comparator cohorts into a single cohort for prediction and then provide the settings required for prediction based on the `PatientLevelPrediction` package. This means that we need to define the time-at-risk (time interval within which we want to predict), the set of predictive covariates and the prediction algorithm to be used (along with its settings).
 - **Estimation step:** Divide the treatment population in a pre-specified number of equal-sized strata based on baseline risk and estimate the absolute and relative treatment effects.
+- **Evaluation of the results:** The package provides standardized output to assess the results. First, it allows assessment of  the quality of the results, e.g. follow-up times, outcome rates, performance of prediction models, overalp of the propensity score distributions and others. Second, it allows for quick and standardized assessment of absolute and relative treatment effects in risk strata.
 
 
 ![RiskStratifiedEstimation package workflow \label{workflow}](rsee_workflow.JPG)
