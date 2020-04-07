@@ -444,7 +444,7 @@ createOverallResults <- function(analysisSettings,
                                            predictOutcome,
                                            analysisSettings$analysisId,
                                            directory)
-      listFiles <- list.files(predictionEvaluationDir)
+      listFiles <- c("covariateSummary.rds", "performanceEvaluation.rds")
       file.copy(file.path(predictionEvaluationDir,
                           listFiles),
                 outputDir)
